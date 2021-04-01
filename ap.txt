@@ -1,0 +1,42 @@
+
+CSCI 1311
+Introduction to Programming Logic
+Introduction to the basics of computer programming and algorithmic thinking for non-science majors. The course focuses on the logic and problem decomposition skills that are critical for understanding computation. Use of a high-level programming language will stress creativity in problem solving using computation, and impart a handson understanding of the process of programming. The course will cover many of the most important concepts in programming and computer science, including choice, repetition, and abstraction. No prior experience in programming is necessary. This course assumes familiarity with high school algebra, geometry, and trigonometry.
+none
+ 
+
+ECON 1312
+Principles of Macroeconomics
+The theory and measurement of changes in the levels of prices, employment, national income and other aggregates. Topics addressed include money and the banking system, international economics, unemployment and inflation, and government stabilization policy.
+ECON 1311
+ 
+
+MATH 1311
+Calculus I
+A study of functions including transcendental and trigonometric: Limits and continuity; differential and integral calculus; and applications.
+none
+ 
+
+MATH 1312
+Calculus II
+A study of methods of integration, series, and an introduction of differential equations. (Offered every semester). 
+MATH 1311
+ 
+
+PHYS 1312
+Introduction to Electricity, Magnetism, & Waves
+A calculus-level introduction to electric fields, magnetic fields, and light waves. Topics include: electric fields, Gauss's Law, electric potential, magnetism, Ampere's Law, electromagnetic induction, Lenz's Law, Maxwell's Equations, geometrical and physical optics. This course is appropriate for physics and engineering science majors. 
+PHYS 1311,MATH 1312
+ 
+
+PSYC 1300
+Principles of Psychology
+An introduction to the major domains of psychological knowledge, informed by biological, cognitive, environmental and motivation perspectives. Emphasizes scientific theory and methods supplemented by applications to everyday experience.
+none
+ 
+
+PHYS 1311
+Introduction to Mechanics
+A calculus-level introduction to classical mechanics. Topics include: particle kinematics, Newton's laws of motion, kinetic and potential energy, linear and angular momentum, torque, statics, simple harmonic motion, mechanical waves, and sound. This course is appropriate for physics and engineering science majors. 
+MATH 1311
+ 
