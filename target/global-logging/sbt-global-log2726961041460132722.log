@@ -1,0 +1,125 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.9 (Oracle Corporation Java 11.0.10)
+[debug] Load.defaultLoad until apply took 1062.6978ms
+[debug]                       Load.loadUnit: plugins took 182.123ms
+[debug]                       Load.loadUnit: defsScala took 8.0479ms
+[debug] [Loading] Scanning directory C:\Users\Jenny\course-catalog\project\project\project
+[debug]                         Load.loadUnit: mkEval took 19.524ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Jenny\course-catalog\project\project\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 34.4071 ms
+[info] loading settings for project course-catalog-build-build-build from metals.sbt ...
+[debug]                           Load.resolveProject(course-catalog-build-build-build) took 68.5248ms
+[debug]                         Load.loadTransitive: finalizeProject(Project(id course-catalog-build-build-build, base: C:\Users\Jenny\course-catalog\project\project\project, plugins: List(<none>))) took 140.0929ms
+[debug] [Loading] Done in C:\Users\Jenny\course-catalog\project\project\project, returning: (course-catalog-build-build-build)
+[debug]                       Load.loadUnit: loadedProjectsRaw took 729.5117ms
+[debug]                       Load.loadUnit: cleanEvalClasses took 11.1047ms
+[debug]                     Load.loadUnit(file:/C:/Users/Jenny/course-catalog/project/project/project/, ...) took 959.1573ms
+[debug]                   Load.apply: load took 1592.1307ms
+[debug]                   Load.apply: resolveProjects took 8.5405ms
+[debug]                   Load.apply: finalTransforms took 99.0449ms
+[debug]                   Load.apply: config.delegates took 17.9776ms
+[debug]                   Load.apply: Def.make(settings)... took 1806.0508ms
+[debug]                   Load.apply: structureIndex took 127.0531ms
+[debug]                   Load.apply: mkStreams took 2.483ms
+[info] loading project definition from C:\Users\Jenny\course-catalog\project\project\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]                 Load.loadUnit: plugins took 5642.5938ms
+[debug]                 Load.loadUnit: defsScala took 0.0105ms
+[debug] [Loading] Scanning directory C:\Users\Jenny\course-catalog\project\project
+[debug]                   Load.loadUnit: mkEval took 1.1061ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Jenny\course-catalog\project\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 4.2846 ms
+[info] loading settings for project course-catalog-build-build from metals.sbt ...
+[debug]                     Load.resolveProject(course-catalog-build-build) took 47.197ms
+[debug]                   Load.loadTransitive: finalizeProject(Project(id course-catalog-build-build, base: C:\Users\Jenny\course-catalog\project\project, plugins: List(<none>))) took 52.43ms
+[debug] [Loading] Done in C:\Users\Jenny\course-catalog\project\project, returning: (course-catalog-build-build)
+[debug]                 Load.loadUnit: loadedProjectsRaw took 94.3013ms
+[debug]                 Load.loadUnit: cleanEvalClasses took 2.6673ms
+[debug]               Load.loadUnit(file:/C:/Users/Jenny/course-catalog/project/project/, ...) took 5742.2557ms
+[debug]             Load.apply: load took 5745.2944ms
+[debug]             Load.apply: resolveProjects took 0.1763ms
+[debug]             Load.apply: finalTransforms took 41.8326ms
+[debug]             Load.apply: config.delegates took 0.4368ms
+[debug]             Load.apply: Def.make(settings)... took 146.9017ms
+[debug]             Load.apply: structureIndex took 34.7435ms
+[debug]             Load.apply: mkStreams took 0.0029ms
+[info] loading project definition from C:\Users\Jenny\course-catalog\project\project
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@4cc8d70d, check cycles: false, forcegc: true
+[success] Generated .bloop\course-catalog-build-build.json
+[success] Total time: 1 s, completed Mar 25, 2021, 5:53:43 PM
+[debug] Running task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@203b953c, check cycles: false, forcegc: true
+[debug]           Load.loadUnit: plugins took 7633.4987ms
+[debug]           Load.loadUnit: defsScala took 0.2095ms
+[debug] [Loading] Scanning directory C:\Users\Jenny\course-catalog\project
+[debug]             Load.loadUnit: mkEval took 0.9698ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Jenny\course-catalog\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 3.2983 ms
+[info] loading settings for project course-catalog-build from assembly.sbt,metals.sbt,plugins.sbt ...
+[debug]               Load.resolveProject(course-catalog-build) took 56.0129ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id course-catalog-build, base: C:\Users\Jenny\course-catalog\project, plugins: List(<none>))) took 60.2505ms
+[debug] [Loading] Done in C:\Users\Jenny\course-catalog\project, returning: (course-catalog-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 152.1044ms
+[debug]           Load.loadUnit: cleanEvalClasses took 4.5746ms
+[debug]         Load.loadUnit(file:/C:/Users/Jenny/course-catalog/project/, ...) took 7793.1372ms
+[debug]       Load.apply: load took 7795.7204ms
+[debug]       Load.apply: resolveProjects took 0.1653ms
+[debug]       Load.apply: finalTransforms took 21.3181ms
+[debug]       Load.apply: config.delegates took 0.3921ms
+[debug]       Load.apply: Def.make(settings)... took 109.1485ms
+[debug]       Load.apply: structureIndex took 30.4159ms
+[debug]       Load.apply: mkStreams took 0.0032ms
+[info] loading project definition from C:\Users\Jenny\course-catalog\project
+[debug] Evaluating tasks: bloopInstall
+[debug] Running task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@93ce24d, check cycles: false, forcegc: true
+[success] Generated .bloop\course-catalog-build.json
+[success] Total time: 1 s, completed Mar 25, 2021, 5:53:45 PM
+[debug] Running task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@4ede035e, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 9657.1927ms
+[debug]     Load.loadUnit: defsScala took 0.0062ms
+[debug] [Loading] Scanning directory C:\Users\Jenny\course-catalog
+[debug]       Load.loadUnit: mkEval took 0.561ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Jenny\course-catalog, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbtassembly.AssemblyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(bloop.integrations.sbt.BloopPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbteclipse.plugin.EclipsePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbtassembly.AssemblyPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(bloop.integrations.sbt.BloopPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(com.typesafe.sbteclipse.plugin.EclipsePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,bloop.integrations.sbt.BloopPlugin,com.typesafe.sbteclipse.plugin.EclipsePlugin,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,sbtassembly.AssemblyPlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 5.7993 ms
+[info] loading settings for project course-catalog from build.sbt ...
+[debug]         Load.resolveProject(course-catalog) took 110.255ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id course-catalog, base: C:\Users\Jenny\course-catalog, plugins: List(<none>))) took 117.1582ms
+[debug] [Loading] Done in C:\Users\Jenny\course-catalog, returning: (course-catalog)
+[debug]     Load.loadUnit: loadedProjectsRaw took 350.6928ms
+[debug]     Load.loadUnit: cleanEvalClasses took 7.7025ms
+[debug]   Load.loadUnit(file:/C:/Users/Jenny/course-catalog/, ...) took 10017.3132ms
+[debug] Load.apply: load took 10052.5661ms
+[debug] Load.apply: resolveProjects took 0.1468ms
+[debug] Load.apply: finalTransforms took 20.8589ms
+[debug] Load.apply: config.delegates took 0.3221ms
+[debug] Load.apply: Def.make(settings)... took 535.3211ms
+[debug] Load.apply: structureIndex took 25.4295ms
+[debug] Load.apply: mkStreams took 0.0023ms
+[info] set current project to course-catalog (in build file:/C:/Users/Jenny/course-catalog/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[error] server failed to start on local:sbt-server-a2ca5e83c4ff7b457a61. java.io.IOException: Could not create lock for \\.\pipe\sbt-server-a2ca5e83c4ff7b457a61_lock, error 5

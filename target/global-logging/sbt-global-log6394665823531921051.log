@@ -1,0 +1,7 @@
+[debug] > Exec(run, Some(8e9ae029-1eb0-4163-b873-a8559a90af1b), Some(CommandSource(console0)))
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@50f6ecab, check cycles: false, forcegc: true
+[success] Total time: 133 s (02:13), completed Apr 1, 2021, 1:15:04 PM
+[debug] > Exec(shell, None, None)
+[error] server failed to start on local:sbt-server-a2ca5e83c4ff7b457a61. java.io.IOException: Could not create lock for \\.\pipe\sbt-server-a2ca5e83c4ff7b457a61_lock, error 5
+[debug] Forcing garbage collection...

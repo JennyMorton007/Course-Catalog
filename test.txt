@@ -1,0 +1,6 @@
+
+CSCI 2320
+Principles of Data Abstraction
+Abstract data types and their implementation in an object-oriented environment. Axiomatic systems describing the classical computer science data structures: stacks, queues, lists, trees, graphs, and the like. Analysis of the computational complexity of alternative implementation strategies in the context of the typical algorithmic applications.
+CSCI 1321,CSCI 1120
+ 

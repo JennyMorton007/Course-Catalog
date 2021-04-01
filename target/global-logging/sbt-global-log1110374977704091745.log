@@ -1,0 +1,10 @@
+[debug] > Exec(run, Some(92dbd561-bcfe-4efd-9f6a-95df7682a811), Some(CommandSource(console0)))
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@29fc83c5, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\Jenny\course-catalog\target\scala-2.12\classes ...
+[warn] there was one deprecation warning (since 8.0.60-R10); re-run with -deprecation for details
+[warn] one warning found
+[info] done compiling
+[success] Total time: 40 s, completed Mar 30, 2021, 7:45:31 PM
+[debug] > Exec(shell, None, None)
+[debug] Forcing garbage collection...

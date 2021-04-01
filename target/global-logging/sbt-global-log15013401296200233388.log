@@ -1,0 +1,8 @@
+[debug] > Exec(run, Some(d6f0e09c-f617-49c5-b4b6-a24738442153), Some(CommandSource(console0)))
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@49cd08f9, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\Jenny\course-catalog\target\scala-2.12\classes ...
+[info] done compiling
+[success] Total time: 54 s, completed Mar 22, 2021, 7:59:56 PM
+[debug] > Exec(shell, None, None)
+[debug] Forcing garbage collection...

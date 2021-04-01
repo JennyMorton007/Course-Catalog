@@ -1,0 +1,19 @@
+[debug] > Exec(test, Some(4626cd1a-da79-44a5-b4fa-54a40aeac2e3), Some(CommandSource(console0)))
+[debug] Evaluating tasks: Test / test
+[debug] Running task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@4c7f2fdb, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to C:\Users\Jenny\course-catalog\target\scala-2.12\classes ...
+[warn] there were two deprecation warnings (since 2.2.60)
+[warn] there was one deprecation warning (since 8.0.60-R10)
+[warn] there were three deprecation warnings in total; re-run with -deprecation for details
+[warn] three warnings found
+[info] done compiling
+[info] ScalaTest
+[info] Run completed in 40 milliseconds.
+[info] Total number of tests run: 0
+[info] Suites: completed 0, aborted 0
+[info] Tests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0
+[info] No tests were executed.
+[success] Total time: 13 s, completed Mar 25, 2021, 5:54:06 PM
+[debug] > Exec(shell, None, None)
+[error] server failed to start on local:sbt-server-a2ca5e83c4ff7b457a61. java.io.IOException: Could not create lock for \\.\pipe\sbt-server-a2ca5e83c4ff7b457a61_lock, error 5
+[debug] Forcing garbage collection...
