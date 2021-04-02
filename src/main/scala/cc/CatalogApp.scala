@@ -10,6 +10,7 @@ import scalafx.scene.control.Button
 import javafx.event.ActionEvent
 import scalafx.scene.text.Text
 import scalafx.scene.text.TextAlignment
+import scalafx.geometry.Insets
 
 object CatalogApp extends JFXApp {
   stage = new JFXApp.PrimaryStage {
@@ -17,12 +18,13 @@ object CatalogApp extends JFXApp {
     scene = new Scene(1200, 600) {
       var catalog = new CourseCatalog()
       var screen = new FlowPane(Orientation.VERTICAL) {
+        prefWrapLength.value = 580
+        padding = Insets(20,20,20,20)   //added padding; check to make sure it works
         children = Array(
           new Label("Welcome to Your Course Catalog"),
           new Button("continue") { onAction = (e: ActionEvent) => home() }
         )
       }
-      screen.prefWrapLength.value = 580
 
       def home(): Unit = {
         screen.children = Array(

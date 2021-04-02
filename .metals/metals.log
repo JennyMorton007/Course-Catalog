@@ -16749,3 +16749,1041 @@ No more data in the client stdin, exiting...
 No more data in the server stdin, exiting...
 No more data in the server stdin, exiting...
 No more data in the client stdin, exiting...
+[0m2021.04.01 15:22:17 INFO  Started: Metals version 0.10.0 in workspace 'C:\Users\Jenny\course-catalog' for client vscode 1.55.0.[0m
+[0m2021.04.01 15:22:19 INFO  time: initialize in 2.73s[0m
+[0m2021.04.01 15:22:21 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.01 15:22:21 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\CatalogApp.scala[0m
+[0m2021.04.01 15:22:21 ERROR failed to index classpath for workspace/symbol
+java.lang.IllegalArgumentException: requirement failed
+	at scala.Predef$.require(Predef.scala:268)
+	at scala.meta.internal.metals.CompressedPackageIndex.<init>(CompressedPackageIndex.scala:23)
+	at scala.meta.internal.metals.CompressedPackageIndex$.flushBucket$1(CompressedPackageIndex.scala:104)
+	at scala.meta.internal.metals.CompressedPackageIndex$.fromPackages(CompressedPackageIndex.scala:144)
+	at scala.meta.internal.metals.ClasspathSearch$.fromPackages(ClasspathSearch.scala:89)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspathUnsafe(WorkspaceSymbolProvider.scala:105)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspath(WorkspaceSymbolProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$didChangeConfiguration$1(MetalsLanguageServer.scala:1122)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+[0m
+[0m2021.04.01 15:22:21 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 20284'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:20284...
+The server is listening for incoming connections at tcp://127.0.0.1:20284...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.01 15:22:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.01 15:22:24 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 37358'...
+Waiting for the bsp connection to come up...
+[0m2021.04.01 15:22:24 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 13285'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:13285...
+The server is listening for incoming connections at tcp://127.0.0.1:13285...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:37358...
+The server is listening for incoming connections at tcp://127.0.0.1:37358...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.01 15:22:27 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.01 15:22:28 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.01 15:22:28 INFO  time: Connected to build server in 7.32s[0m
+[0m2021.04.01 15:22:28 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.01 15:22:29 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.04.01 15:22:29 INFO  time: Imported build in 0.27s[0m
+package cc
+
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scala.collection.mutable
+import scalafx.scene.layout.FlowPane
+import scalafx.geometry.Orientation
+import scalafx.scene.control.Label
+import scalafx.scene.control.Button
+import javafx.event.ActionEvent
+import scalafx.scene.text.Text
+import scalafx.scene.text.TextAlignment
+
+object CatalogApp extends JFXApp {
+  stage = new JFXApp.PrimaryStage {
+    title = "Course Catalog"
+    scene = new Scene(1200, 600) {
+      var catalog = new CourseCatalog()
+      var screen = new FlowPane(Orientation.VERTICAL) {
+        children = Array(
+          new Label("Welcome to Your Course Catalog"),
+          new Button("continue") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      screen.prefWrapLength.value = 580
+
+      def home(): Unit = {
+        screen.children = Array(
+          new Label("Home Page"),
+          new Button("View Grades & GPA") {
+            onAction = (e: ActionEvent) => { gradesGpa() }
+          },
+          new Button("View Credit") {
+            onAction = (e: ActionEvent) => { credit() }
+          },
+          new Button("View Current Classes") {
+            onAction = (e: ActionEvent) => { current() }
+          },
+          new Button("View Next Semester") {
+            onAction = (e: ActionEvent) => { next() }
+          },
+          new Button("View All Courses") {
+            onAction = (e: ActionEvent) => { all() }
+          },
+          new Button("View Graduation Requirements"){
+            onAction = (e:ActionEvent) =>{gradReqs()}
+          }
+        )
+      }
+      def gradReqs():Unit = {
+        var temp = catalog.getGradShort()
+        temp.foreach(x=> x.onAction=(e:ActionEvent)=>gradReq(catalog.reqs(x.text.value)))
+        screen.children = Array(
+          new Label("Graduation Requirements: "),
+          new Label(catalog.getReqCompl()))++temp++Array(
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def gradReq(x:Requirement):Unit = {
+        screen.children = Array(
+          new Text( x.toString()),
+          new Button("Back"){onAction=(e:ActionEvent)=>gradReqs()},
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def gradesGpa(): Unit = {
+        screen.children = Array(
+          new Label("Grades"),
+          new Label(catalog.getGrades),
+          new Label("GPA"),
+          new Label(catalog.getGPA),
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def credit(): Unit = {
+        screen.children = Array(
+          new Label("Credit\n"),
+          new Label(catalog.getCredit()),
+          new Label("\nTotal: " + catalog.getHours() + " hours"),
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def current(): Unit = {
+        var temp = catalog.getCurrent()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseLong(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => current() }
+            )
+        )
+        screen.children = Array(
+          new Label("Current Semester: " + catalog.current.name)
+        ) ++ temp ++ Array(new Label("Total Hours: "+catalog.current.getHours()),new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def courseLong(x: Course, back: Button): Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          back,
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def courseEdit(x: Course, back: Button): Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          new Button("Remove Course") {
+            onAction = (e: ActionEvent) => catalog.next.remove(x)
+          },
+          back,
+          new Button("Next Semester") { onAction = (e: ActionEvent) => next() }
+        )
+      }
+      def courseAdd(x: Course, back: Button):Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          new Button("Add Course") {
+            onAction = (e: ActionEvent) => catalog.next.add(x)
+          },
+          back,
+          new Button("Next Semester") { onAction = (e: ActionEvent) => next() }
+        )
+      }
+      def next(): Unit = {
+        var temp = catalog.getNext()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseEdit(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => next() }
+            )
+        )
+        screen.children = Array(
+          new Label("Next Semester: " + catalog.next.name),new Label("Recommended Courses: Data Abstr., CS Coll., Func. Lang.")
+        ) ++ temp ++ Array(new Label("Total Hours: "+catalog.next.getHours()),new Button("Add a Course"){onAction=(e:ActionEvent)=>allEdit(new Button("Back"){onAction=(e:ActionEvent)=>next()})},new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def all(): Unit = {
+        var temp = catalog.getAll()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseLong(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => all() }
+            )
+        )
+        screen.children = Array(
+          new Label("All Courses: ")
+        ) ++ temp ++ Array(new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def allEdit(back: Button): Unit = {
+        var temp = catalog.getReady()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseAdd(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back"){onAction=(e:ActionEvent)=>allEdit(back)}
+            )
+        )
+        screen.children = Array(
+          new Label("Available Courses: ")
+        ) ++ temp ++ Array(
+          back,
+          new Button("Home") {
+            onAction = (e: ActionEvent) => home()
+          }
+        )
+      }
+
+      content = screen
+    }
+  }
+}
+
+[0m2021.04.01 15:22:35 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+package cc
+
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scala.collection.mutable
+import scalafx.scene.layout.FlowPane
+import scalafx.geometry.Orientation
+import scalafx.scene.control.Label
+import scalafx.scene.control.Button
+import javafx.event.ActionEvent
+import scalafx.scene.text.Text
+import scalafx.scene.text.TextAlignment
+
+object CatalogApp extends JFXApp {
+  stage = new JFXApp.PrimaryStage {
+    title = "Course Catalog"
+    scene = new Scene(1200, 600) {
+      var catalog = new CourseCatalog()
+      var screen = new FlowPane(Orientation.VERTICAL) {
+        children = Array(
+          new Label("Welcome to Your Course Catalog"),
+          new Button("continue") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      screen.prefWrapLength.value = 580
+
+      def home(): Unit = {
+        screen.children = Array(
+          new Label("Home Page"),
+          new Button("View Grades & GPA") {
+            onAction = (e: ActionEvent) => { gradesGpa() }
+          },
+          new Button("View Credit") {
+            onAction = (e: ActionEvent) => { credit() }
+          },
+          new Button("View Current Classes") {
+            onAction = (e: ActionEvent) => { current() }
+          },
+          new Button("View Next Semester") {
+            onAction = (e: ActionEvent) => { next() }
+          },
+          new Button("View All Courses") {
+            onAction = (e: ActionEvent) => { all() }
+          },
+          new Button("View Graduation Requirements"){
+            onAction = (e:ActionEvent) =>{gradReqs()}
+          }
+        )
+      }
+      def gradReqs():Unit = {
+        var temp = catalog.getGradShort()
+        temp.foreach(x=> x.onAction=(e:ActionEvent)=>gradReq(catalog.reqs(x.text.value)))
+        screen.children = Array(
+          new Label("Graduation Requirements: "),
+          new Label(catalog.getReqCompl()))++temp++Array(
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def gradReq(x:Requirement):Unit = {
+        screen.children = Array(
+          new Text( x.toString()),
+          new Button("Back"){onAction=(e:ActionEvent)=>gradReqs()},
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def gradesGpa(): Unit = {
+        screen.children = Array(
+          new Label("Grades"),
+          new Label(catalog.getGrades),
+          new Label("GPA"),
+          new Label(catalog.getGPA),
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def credit(): Unit = {
+        screen.children = Array(
+          new Label("Credit\n"),
+          new Label(catalog.getCredit()),
+          new Label("\nTotal: " + catalog.getHours() + " hours"),
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def current(): Unit = {
+        var temp = catalog.getCurrent()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseLong(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => current() }
+            )
+        )
+        screen.children = Array(
+          new Label("Current Semester: " + catalog.current.name)
+        ) ++ temp ++ Array(new Label("Total Hours: "+catalog.current.getHours()),new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def courseLong(x: Course, back: Button): Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          back,
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def courseEdit(x: Course, back: Button): Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          new Button("Remove Course") {
+            onAction = (e: ActionEvent) => catalog.next.remove(x)
+          },
+          back,
+          new Button("Next Semester") { onAction = (e: ActionEvent) => next() }
+        )
+      }
+      def courseAdd(x: Course, back: Button):Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          new Button("Add Course") {
+            onAction = (e: ActionEvent) => catalog.next.add(x)
+          },
+          back,
+          new Button("Next Semester") { onAction = (e: ActionEvent) => next() }
+        )
+      }
+      def next(): Unit = {
+        var temp = catalog.getNext()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseEdit(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => next() }
+            )
+        )
+        screen.children = Array(
+          new Label("Next Semester: " + catalog.next.name),new Label("Recommended Courses: Data Abstr., CS Coll., Func. Lang.")
+        ) ++ temp ++ Array(new Label("Total Hours: "+catalog.next.getHours()),new Button("Add a Course"){onAction=(e:ActionEvent)=>allEdit(new Button("Back"){onAction=(e:ActionEvent)=>next()})},new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def all(): Unit = {
+        var temp = catalog.getAll()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseLong(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => all() }
+            )
+        )
+        screen.children = Array(
+          new Label("All Courses: ")
+        ) ++ temp ++ Array(new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def allEdit(back: Button): Unit = {
+        var temp = catalog.getReady()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseAdd(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back"){onAction=(e:ActionEvent)=>allEdit(back)}
+            )
+        )
+        screen.children = Array(
+          new Label("Available Courses: ")
+        ) ++ temp ++ Array(
+          back,
+          new Button("Home") {
+            onAction = (e: ActionEvent) => home()
+          }
+        )
+      }
+
+      content = screen
+    }
+  }
+}
+
+[0m2021.04.01 15:22:35 INFO  time: code lens generation in 14s[0m
+[0m2021.04.01 15:22:41 INFO  time: indexed workspace in 11s[0m
+[0m2021.04.01 15:22:46 INFO  compiling course-catalog (1 scala source)[0m
+[0m2021.04.01 15:22:54 INFO  time: compiled course-catalog in 8.48s[0m
+Apr 01, 2021 6:14:08 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.04.01 18:14:08 INFO  shutting down Metals[0m
+[0m2021.04.01 18:14:08 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.02 17:14:42 INFO  Started: Metals version 0.10.0 in workspace 'C:\Users\Jenny\course-catalog' for client vscode 1.55.0.[0m
+[0m2021.04.02 17:14:45 INFO  time: initialize in 3.32s[0m
+[0m2021.04.02 17:14:46 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.02 17:14:46 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\CatalogApp.scala[0m
+[0m2021.04.02 17:14:47 ERROR failed to index classpath for workspace/symbol
+java.lang.IllegalArgumentException: requirement failed
+	at scala.Predef$.require(Predef.scala:268)
+	at scala.meta.internal.metals.CompressedPackageIndex.<init>(CompressedPackageIndex.scala:23)
+	at scala.meta.internal.metals.CompressedPackageIndex$.flushBucket$1(CompressedPackageIndex.scala:104)
+	at scala.meta.internal.metals.CompressedPackageIndex$.fromPackages(CompressedPackageIndex.scala:144)
+	at scala.meta.internal.metals.ClasspathSearch$.fromPackages(ClasspathSearch.scala:89)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspathUnsafe(WorkspaceSymbolProvider.scala:105)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspath(WorkspaceSymbolProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$didChangeConfiguration$1(MetalsLanguageServer.scala:1122)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+[0m
+[0m2021.04.02 17:14:47 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 39360'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:39360...
+The server is listening for incoming connections at tcp://127.0.0.1:39360...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.02 17:14:50 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.02 17:14:50 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.02 17:14:50 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 38798'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 27340'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:38798...
+The server is listening for incoming connections at tcp://127.0.0.1:38798...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:27340...
+The server is listening for incoming connections at tcp://127.0.0.1:27340...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.02 17:14:56 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+[0m2021.04.02 17:14:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.02 17:14:57 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.02 17:14:57 INFO  time: Connected to build server in 10s[0m
+[0m2021.04.02 17:14:57 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.02 17:14:57 INFO  time: Imported build in 0.25s[0m
+package cc
+
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scala.collection.mutable
+import scalafx.scene.layout.FlowPane
+import scalafx.geometry.Orientation
+import scalafx.scene.control.Label
+import scalafx.scene.control.Button
+import javafx.event.ActionEvent
+import scalafx.scene.text.Text
+import scalafx.scene.text.TextAlignment
+
+object CatalogApp extends JFXApp {
+  stage = new JFXApp.PrimaryStage {
+    title = "Course Catalog"
+    scene = new Scene(1200, 600) {
+      var catalog = new CourseCatalog()
+      var screen = new FlowPane(Orientation.VERTICAL) {
+        children = Array(
+          new Label("Welcome to Your Course Catalog"),
+          new Button("continue") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      screen.prefWrapLength.value = 580
+
+      def home(): Unit = {
+        screen.children = Array(
+          new Label("Home Page"),
+          new Button("View Grades & GPA") {
+            onAction = (e: ActionEvent) => { gradesGpa() }
+          },
+          new Button("View Credit") {
+            onAction = (e: ActionEvent) => { credit() }
+          },
+          new Button("View Current Classes") {
+            onAction = (e: ActionEvent) => { current() }
+          },
+          new Button("View Next Semester") {
+            onAction = (e: ActionEvent) => { next() }
+          },
+          new Button("View All Courses") {
+            onAction = (e: ActionEvent) => { all() }
+          },
+          new Button("View Graduation Requirements"){
+            onAction = (e:ActionEvent) =>{gradReqs()}
+          }
+        )
+      }
+      def gradReqs():Unit = {
+        var temp = catalog.getGradShort()
+        temp.foreach(x=> x.onAction=(e:ActionEvent)=>gradReq(catalog.reqs(x.text.value)))
+        screen.children = Array(
+          new Label("Graduation Requirements: "),
+          new Label(catalog.getReqCompl()))++temp++Array(
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def gradReq(x:Requirement):Unit = {
+        screen.children = Array(
+          new Text( x.toString()),
+          new Button("Back"){onAction=(e:ActionEvent)=>gradReqs()},
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def gradesGpa(): Unit = {
+        screen.children = Array(
+          new Label("Grades"),
+          new Label(catalog.getGrades),
+          new Label("GPA"),
+          new Label(catalog.getGPA),
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def credit(): Unit = {
+        screen.children = Array(
+          new Label("Credit\n"),
+          new Label(catalog.getCredit()),
+          new Label("\nTotal: " + catalog.getHours() + " hours"),
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def current(): Unit = {
+        var temp = catalog.getCurrent()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseLong(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => current() }
+            )
+        )
+        screen.children = Array(
+          new Label("Current Semester: " + catalog.current.name)
+        ) ++ temp ++ Array(new Label("Total Hours: "+catalog.current.getHours()),new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def courseLong(x: Course, back: Button): Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          back,
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def courseEdit(x: Course, back: Button): Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          new Button("Remove Course") {
+            onAction = (e: ActionEvent) => catalog.next.remove(x)
+          },
+          back,
+          new Button("Next Semester") { onAction = (e: ActionEvent) => next() }
+        )
+      }
+      def courseAdd(x: Course, back: Button):Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          new Button("Add Course") {
+            onAction = (e: ActionEvent) => catalog.next.add(x)
+          },
+          back,
+          new Button("Next Semester") { onAction = (e: ActionEvent) => next() }
+        )
+      }
+      def next(): Unit = {
+        var temp = catalog.getNext()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseEdit(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => next() }
+            )
+        )
+        screen.children = Array(
+          new Label("Next Semester: " + catalog.next.name),new Label("Recommended Courses: Data Abstr., CS Coll., Func. Lang.")
+        ) ++ temp ++ Array(new Label("Total Hours: "+catalog.next.getHours()),new Button("Add a Course"){onAction=(e:ActionEvent)=>allEdit(new Button("Back"){onAction=(e:ActionEvent)=>next()})},new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def all(): Unit = {
+        var temp = catalog.getAll()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseLong(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => all() }
+            )
+        )
+        screen.children = Array(
+          new Label("All Courses: ")
+        ) ++ temp ++ Array(new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def allEdit(back: Button): Unit = {
+        var temp = catalog.getReady()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseAdd(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back"){onAction=(e:ActionEvent)=>allEdit(back)}
+            )
+        )
+        screen.children = Array(
+          new Label("Available Courses: ")
+        ) ++ temp ++ Array(
+          back,
+          new Button("Home") {
+            onAction = (e: ActionEvent) => home()
+          }
+        )
+      }
+
+      content = screen
+    }
+  }
+}
+
+[0m2021.04.02 17:15:01 INFO  time: code lens generation in 4.01s[0m
+[0m2021.04.02 17:15:01 INFO  time: code lens generation in 2.4s[0m
+[0m2021.04.02 17:15:02 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+Apr 02, 2021 5:15:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+Apr 02, 2021 5:15:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 35
+[0m2021.04.02 17:15:05 INFO  no build target: using presentation compiler with only scala-library: 2.12.12[0m
+[0m2021.04.02 17:15:09 INFO  time: indexed workspace in 12s[0m
+package cc
+
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scala.collection.mutable
+import scalafx.scene.layout.FlowPane
+import scalafx.geometry.Orientation
+import scalafx.scene.control.Label
+import scalafx.scene.control.Button
+import javafx.event.ActionEvent
+import scalafx.scene.text.Text
+import scalafx.scene.text.TextAlignment
+
+object CatalogApp extends JFXApp {
+  stage = new JFXApp.PrimaryStage {
+    title = "Course Catalog"
+    scene = new Scene(1200, 600) {
+      var catalog = new CourseCatalog()
+      var screen = new FlowPane(Orientation.VERTICAL) {
+        children = Array(
+          new Label("Welcome to Your Course Catalog"),
+          new Button("continue") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      screen.prefWrapLength.value = 580
+
+      def home(): Unit = {
+        screen.children = Array(
+          new Label("Home Page"),
+          new Button("View Grades & GPA") {
+            onAction = (e: ActionEvent) => { gradesGpa() }
+          },
+          new Button("View Credit") {
+            onAction = (e: ActionEvent) => { credit() }
+          },
+          new Button("View Current Classes") {
+            onAction = (e: ActionEvent) => { current() }
+          },
+          new Button("View Next Semester") {
+            onAction = (e: ActionEvent) => { next() }
+          },
+          new Button("View All Courses") {
+            onAction = (e: ActionEvent) => { all() }
+          },
+          new Button("View Graduation Requirements"){
+            onAction = (e:ActionEvent) =>{gradReqs()}
+          }
+        )
+      }
+      def gradReqs():Unit = {
+        var temp = catalog.getGradShort()
+        temp.foreach(x=> x.onAction=(e:ActionEvent)=>gradReq(catalog.reqs(x.text.value)))
+        screen.children = Array(
+          new Label("Graduation Requirements: "),
+          new Label(catalog.getReqCompl()))++temp++Array(
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def gradReq(x:Requirement):Unit = {
+        screen.children = Array(
+          new Text( x.toString()),
+          new Button("Back"){onAction=(e:ActionEvent)=>gradReqs()},
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def gradesGpa(): Unit = {
+        screen.children = Array(
+          new Label("Grades"),
+          new Label(catalog.getGrades),
+          new Label("GPA"),
+          new Label(catalog.getGPA),
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def credit(): Unit = {
+        screen.children = Array(
+          new Label("Credit\n"),
+          new Label(catalog.getCredit()),
+          new Label("\nTotal: " + catalog.getHours() + " hours"),
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def current(): Unit = {
+        var temp = catalog.getCurrent()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseLong(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => current() }
+            )
+        )
+        screen.children = Array(
+          new Label("Current Semester: " + catalog.current.name)
+        ) ++ temp ++ Array(new Label("Total Hours: "+catalog.current.getHours()),new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def courseLong(x: Course, back: Button): Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          back,
+          new Button("Home") { onAction = (e: ActionEvent) => home() }
+        )
+      }
+      def courseEdit(x: Course, back: Button): Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          new Button("Remove Course") {
+            onAction = (e: ActionEvent) => catalog.next.remove(x)
+          },
+          back,
+          new Button("Next Semester") { onAction = (e: ActionEvent) => next() }
+        )
+      }
+      def courseAdd(x: Course, back: Button):Unit = {
+        var temp = new Text(x.getLong())
+        temp.setTextAlignment(TextAlignment.LEFT)
+        temp.wrappingWidth.value = 800
+        screen.children = Array(
+          temp,
+          new Button("Add Course") {
+            onAction = (e: ActionEvent) => catalog.next.add(x)
+          },
+          back,
+          new Button("Next Semester") { onAction = (e: ActionEvent) => next() }
+        )
+      }
+      def next(): Unit = {
+        var temp = catalog.getNext()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseEdit(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => next() }
+            )
+        )
+        screen.children = Array(
+          new Label("Next Semester: " + catalog.next.name),new Label("Recommended Courses: Data Abstr., CS Coll., Func. Lang.")
+        ) ++ temp ++ Array(new Label("Total Hours: "+catalog.next.getHours()),new Button("Add a Course"){onAction=(e:ActionEvent)=>allEdit(new Button("Back"){onAction=(e:ActionEvent)=>next()})},new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def all(): Unit = {
+        var temp = catalog.getAll()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseLong(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back") { onAction = (e: ActionEvent) => all() }
+            )
+        )
+        screen.children = Array(
+          new Label("All Courses: ")
+        ) ++ temp ++ Array(new Button("Home") {
+          onAction = (e: ActionEvent) => home()
+        })
+      }
+      def allEdit(back: Button): Unit = {
+        var temp = catalog.getReady()
+        temp.foreach(x =>
+          x.onAction = (e: ActionEvent) =>
+            courseAdd(
+              catalog.courses(x.text.value.substring(0, 9)),
+              new Button("Back"){onAction=(e:ActionEvent)=>allEdit(back)}
+            )
+        )
+        screen.children = Array(
+          new Label("Available Courses: ")
+        ) ++ temp ++ Array(
+          back,
+          new Button("Home") {
+            onAction = (e: ActionEvent) => home()
+          }
+        )
+      }
+
+      content = screen
+    }
+  }
+}
+
+[0m2021.04.02 17:15:15 INFO  time: code lens generation in 19s[0m
+[0m2021.04.02 17:15:15 INFO  time: code lens generation in 25s[0m
+[0m2021.04.02 17:15:15 INFO  time: code lens generation in 28s[0m
+[0m2021.04.02 17:15:15 INFO  time: code lens generation in 28s[0m
+/*
+ * Copyright (c) 2011-2015, ScalaFX Project
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *     * Neither the name of the ScalaFX Project nor the
+ *       names of its contributors may be used to endorse or promote products
+ *       derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE SCALAFX PROJECT OR ITS CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+ * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+package scalafx.geometry
+
+import javafx.{geometry => jfxg}
+
+import scalafx.delegate.{SFXEnumDelegate, SFXEnumDelegateCompanion}
+
+/** Wrapper for [[http://docs.oracle.com/javase/8/javafx/api/javafx/geometry/Orientation.html javafx.geometry.Orientation]] */
+object Orientation
+  extends SFXEnumDelegateCompanion[jfxg.Orientation, Orientation] {
+
+  val Horizontal = new Orientation(jfxg.Orientation.HORIZONTAL)
+  @deprecated ("Use Horizontal; HORIZONTAL will be removed in a future release", "8.0.60-R10")
+  val HORIZONTAL = Horizontal
+
+  val Vertical = new Orientation(jfxg.Orientation.VERTICAL)
+  @deprecated ("Use Vertical; VERTICAL will be removed in a future release", "8.0.60-R10")
+  val VERTICAL = Vertical
+
+  protected override def unsortedValues: Array[Orientation] = Array(Horizontal, Vertical)
+}
+
+
+sealed case class Orientation(override val delegate: jfxg.Orientation)
+  extends SFXEnumDelegate[jfxg.Orientation]
+
+[0m2021.04.02 17:15:25 INFO  compiling course-catalog (1 scala source)[0m
+[0m2021.04.02 17:15:29 INFO  time: compiled course-catalog in 4.13s[0m
+Apr 02, 2021 5:15:32 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+[0m2021.04.02 17:15:38 INFO  compiling course-catalog (1 scala source)[0m
+[0m2021.04.02 17:15:48 WARN  there were three deprecation warnings (since 2.2.60)[0m
+[0m2021.04.02 17:15:48 WARN  there was one deprecation warning (since 8.0.60-R10)[0m
+[0m2021.04.02 17:15:48 WARN  there were four deprecation warnings in total; re-run with -deprecation for details[0m
+[0m2021.04.02 17:15:48 INFO  time: compiled course-catalog in 10s[0m
+[0m2021.04.02 17:16:06 INFO  compiling course-catalog (1 scala source)[0m
+[0m2021.04.02 17:16:08 INFO  shutting down Metals[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.02 17:16:08 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.04.02 17:16:08 INFO  Shut down connection with build server.[0m
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.02 17:16:08 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.04.02 17:44:13 INFO  Started: Metals version 0.10.0 in workspace 'C:\Users\Jenny\course-catalog' for client vscode 1.55.0.[0m
+[0m2021.04.02 17:44:16 INFO  time: initialize in 2.89s[0m
+[0m2021.04.02 17:44:17 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.02 17:44:17 ERROR failed to index classpath for workspace/symbol
+java.lang.IllegalArgumentException: requirement failed
+	at scala.Predef$.require(Predef.scala:268)
+	at scala.meta.internal.metals.CompressedPackageIndex.<init>(CompressedPackageIndex.scala:23)
+	at scala.meta.internal.metals.CompressedPackageIndex$.flushBucket$1(CompressedPackageIndex.scala:104)
+	at scala.meta.internal.metals.CompressedPackageIndex$.fromPackages(CompressedPackageIndex.scala:144)
+	at scala.meta.internal.metals.ClasspathSearch$.fromPackages(ClasspathSearch.scala:89)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspathUnsafe(WorkspaceSymbolProvider.scala:105)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspath(WorkspaceSymbolProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$didChangeConfiguration$1(MetalsLanguageServer.scala:1122)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+[0m
+[0m2021.04.02 17:44:18 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 31857'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:31857...
+The server is listening for incoming connections at tcp://127.0.0.1:31857...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.02 17:44:20 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.02 17:44:20 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.02 17:44:20 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 40424'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 37503'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:40424...
+The server is listening for incoming connections at tcp://127.0.0.1:40424...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:37503...
+The server is listening for incoming connections at tcp://127.0.0.1:37503...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.02 17:44:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.02 17:44:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.02 17:44:22 INFO  time: Connected to build server in 4.93s[0m
+[0m2021.04.02 17:44:22 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.02 17:44:22 INFO  time: Imported build in 0.25s[0m
+[0m2021.04.02 17:44:32 INFO  compiling course-catalog (1 scala source)[0m
+[0m2021.04.02 17:44:33 INFO  time: indexed workspace in 10s[0m
+[0m2021.04.02 17:44:37 INFO  Deduplicating compilation of course-catalog from bsp client 'Metals 0.10.0' (since 16.524s)[0m
+[0m2021.04.02 17:44:37 INFO  compiling course-catalog (1 scala source)[0m
+[0m2021.04.02 17:44:41 WARN  there were three deprecation warnings (since 2.2.60)[0m
+[0m2021.04.02 17:44:41 WARN  there was one deprecation warning (since 8.0.60-R10)[0m
+[0m2021.04.02 17:44:41 WARN  there were four deprecation warnings in total; re-run with -deprecation for details[0m
+[0m2021.04.02 17:44:41 WARN  there were three deprecation warnings (since 2.2.60)[0m
+[0m2021.04.02 17:44:41 WARN  there was one deprecation warning (since 8.0.60-R10)[0m
+[0m2021.04.02 17:44:41 WARN  there were four deprecation warnings in total; re-run with -deprecation for details[0m
+[0m2021.04.02 17:44:41 INFO  time: compiled course-catalog in 4.71s[0m
+Apr 02, 2021 5:45:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification

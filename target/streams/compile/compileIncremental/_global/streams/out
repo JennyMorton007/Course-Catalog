@@ -2,5 +2,37 @@
 [debug] IncrementalCompile.incrementalCompile
 [debug] previous = Stamps for: 39 products, 6 sources, 4 libraries
 [debug] current source = Set(${BASE}/src/main/scala/cc/Course.scala, ${BASE}/src/main/scala/cc/Complete.scala, ${BASE}/src/main/scala/cc/CourseCatalog.scala, ${BASE}/src/main/scala/cc/CatalogApp.scala, ${BASE}/src/main/scala/cc/Requirement.scala, ${BASE}/src/main/scala/cc/Group.scala)
-[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
-[debug] No changes
+[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/cc/CatalogApp.scala), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] 
+[debug] Initial source changes:
+[debug] 	removed: Set()
+[debug] 	added: Set()
+[debug] 	modified: Set(${BASE}/src/main/scala/cc/CatalogApp.scala)
+[debug] Invalidated products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated classes: Set(cc.CatalogApp)
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated classes: Set(cc.CatalogApp)
+[debug] All initially invalidated sources:Set(${BASE}/src/main/scala/cc/CatalogApp.scala)
+[debug] Initial set of included nodes: cc.CatalogApp
+[debug] compilation cycle 1
+[info] compiling 1 Scala source to C:\Users\Jenny\course-catalog\target\scala-2.12\classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.12:1.4.4:compile for Scala 2.12.12
+[debug] [zinc] Running cached compiler 16add653 for Scala compiler version 2.12.12
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-library.jar
+[debug] 	-classpath
+[debug] 	C:\Users\Jenny\course-catalog\target\scala-2.12\classes;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalafx\scalafx_2.12\8.0.144-R12\scalafx_2.12-8.0.144-R12.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalactic\scalactic_2.12\3.0.5\scalactic_2.12-3.0.5.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-base\11\javafx-base-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-controls\11\javafx-controls-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-fxml\11\javafx-fxml-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-graphics\11\javafx-graphics-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-media\11\javafx-media-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-swing\11\javafx-swing-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-web\11\javafx-web-11-win.jar;C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-reflect.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-graphics\11\javafx-graphics-11.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-controls\11\javafx-controls-11.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-base\11\javafx-base-11.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-media\11\javafx-media-11.jar
+[debug] New invalidations:
+[debug] Initial set of included nodes: 
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] Final step, transitive dependencies:
+[debug] 	Set()
+[debug] No classes were invalidated.
+[debug] Scala compilation took 8.5343614 s
+[info] done compiling
