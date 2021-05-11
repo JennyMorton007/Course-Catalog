@@ -1,8 +1,0 @@
-[debug] > Exec(run, Some(ecdbb4dd-6c22-45c3-b28b-fa66dd468b23), Some(CommandSource(console0)))
-[debug] Evaluating tasks: Compile / run
-[debug] Running task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@7eb94590, check cycles: false, forcegc: true
-[info] compiling 1 Scala source to C:\Users\Jenny\course-catalog\target\scala-2.12\classes ...
-[info] done compiling
-[success] Total time: 5 s, completed Mar 31, 2021, 5:42:09 PM
-[debug] > Exec(shell, None, None)
-[error] server failed to start on local:sbt-server-a2ca5e83c4ff7b457a61. java.io.IOException: Could not create lock for \\.\pipe\sbt-server-a2ca5e83c4ff7b457a61_lock, error 5

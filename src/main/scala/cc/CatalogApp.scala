@@ -143,7 +143,7 @@ object CatalogApp extends JFXApp {
             )
         )
         screen.children = Array(
-          new Label("Next Semester: " + catalog.next.name),new Label("Recommended Courses: Data Abstr., CS Coll., Func. Lang.")
+          new Label("Next Semester: " + catalog.next.name)
         ) ++ temp ++ Array(new Label("Total Hours: "+catalog.next.getHours()),new Button("Add a Course"){onAction=(e:ActionEvent)=>allEdit(new Button("Back"){onAction=(e:ActionEvent)=>next()})},new Button("Home") {
           onAction = (e: ActionEvent) => home()
         })

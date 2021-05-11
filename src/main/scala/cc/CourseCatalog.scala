@@ -57,6 +57,7 @@ class CourseCatalog {
   fl20.classes.foreach(_.done = true)
   sp21.classes.foreach(_.done = true)
   all.classes.foreach(x => if (x.isReady) { x.ready = true })
+  Array("PHED 1153","CSCI 2322","CLAS 1305","HCOM 1305","CSCI 2320","CSCI 2094","PLSI 1361").foreach(x => fl21.add(all.findCourse(x)))
   txtFiles.foreach(x => x._2.sort())
 
     for(a <- Source.fromFile("gradreqs.txt").getLines()){

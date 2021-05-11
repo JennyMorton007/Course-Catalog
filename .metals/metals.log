@@ -17787,3 +17787,352 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 [0m2021.04.02 17:44:41 INFO  time: compiled course-catalog in 4.71s[0m
 Apr 02, 2021 5:45:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTraceNotification
+Apr 02, 2021 8:20:49 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.04.02 20:20:49 INFO  shutting down Metals[0m
+[0m2021.04.02 20:20:49 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.02 20:20:49 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.02 20:20:49 INFO  Shut down connection with build server.[0m
+[0m2021.04.13 15:51:56 INFO  Started: Metals version 0.10.1 in workspace 'C:\Users\Jenny\course-catalog' for client vscode 1.55.2.[0m
+[0m2021.04.13 15:52:01 INFO  time: initialize in 5.6s[0m
+[0m2021.04.13 15:52:03 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.13 15:52:04 ERROR failed to index classpath for workspace/symbol
+java.lang.IllegalArgumentException: requirement failed
+	at scala.Predef$.require(Predef.scala:268)
+	at scala.meta.internal.metals.CompressedPackageIndex.<init>(CompressedPackageIndex.scala:23)
+	at scala.meta.internal.metals.CompressedPackageIndex$.flushBucket$1(CompressedPackageIndex.scala:104)
+	at scala.meta.internal.metals.CompressedPackageIndex$.fromPackages(CompressedPackageIndex.scala:144)
+	at scala.meta.internal.metals.ClasspathSearch$.fromPackages(ClasspathSearch.scala:89)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspathUnsafe(WorkspaceSymbolProvider.scala:105)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspath(WorkspaceSymbolProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$didChangeConfiguration$1(MetalsLanguageServer.scala:1132)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+[0m
+[0m2021.04.13 15:52:04 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 25146'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:25146...
+The server is listening for incoming connections at tcp://127.0.0.1:25146...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.13 15:52:08 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.13 15:52:08 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+[0m2021.04.13 15:52:08 INFO  Opening a bsp server connection with 'bsp --protocol tcp --port 30737'...Attempting to connect to the build server...
+[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 31290'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:31290...
+The server is listening for incoming connections at tcp://127.0.0.1:31290...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:30737...
+The server is listening for incoming connections at tcp://127.0.0.1:30737...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.13 15:52:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.13 15:52:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.13 15:52:16 INFO  time: Connected to build server in 12s[0m
+[0m2021.04.13 15:52:16 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.13 15:52:17 INFO  time: Imported build in 0.96s[0m
+[0m2021.04.13 15:52:31 INFO  time: indexed workspace in 13s[0m
+Apr 13, 2021 7:43:26 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.04.13 19:43:26 INFO  shutting down Metals[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.18 18:53:22 INFO  Started: Metals version 0.10.1 in workspace 'C:\Users\Jenny\course-catalog' for client vscode 1.55.2.[0m
+[0m2021.04.18 18:53:26 INFO  time: initialize in 3.71s[0m
+[0m2021.04.18 18:53:27 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.18 18:53:27 ERROR failed to index classpath for workspace/symbol
+java.lang.IllegalArgumentException: requirement failed
+	at scala.Predef$.require(Predef.scala:268)
+	at scala.meta.internal.metals.CompressedPackageIndex.<init>(CompressedPackageIndex.scala:23)
+	at scala.meta.internal.metals.CompressedPackageIndex$.flushBucket$1(CompressedPackageIndex.scala:104)
+	at scala.meta.internal.metals.CompressedPackageIndex$.fromPackages(CompressedPackageIndex.scala:144)
+	at scala.meta.internal.metals.ClasspathSearch$.fromPackages(ClasspathSearch.scala:89)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspathUnsafe(WorkspaceSymbolProvider.scala:105)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspath(WorkspaceSymbolProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$didChangeConfiguration$1(MetalsLanguageServer.scala:1132)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+[0m
+[0m2021.04.18 18:53:27 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 12868'...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.04.18 18:53:43 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\CatalogApp.scala[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.04.18 18:53:49 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+Apr 18, 2021 6:53:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Apr 18, 2021 6:53:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+[0m2021.04.18 18:53:49 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\Group.scala[0m
+[0m2021.04.18 18:53:49 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\CourseCatalog.scala[0m
+[0m2021.04.18 18:53:49 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\Course.scala[0m
+[0m2021.04.18 18:53:49 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\Complete.scala[0m
+Waiting for the bsp connection to come up...
+[0m2021.04.18 18:53:51 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\Group.scala[0m
+[0m2021.04.18 18:53:51 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\Requirement.scala[0m
+[0m2021.04.18 18:53:53 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\CatalogApp.scala[0m
+[0m2021.04.18 18:53:53 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\Group.scala[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.04.18 18:53:56 INFO  time: code lens generation in 2.85s[0m
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.8...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from 'c:\Users\Jenny\course-catalog\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Users\Jenny\course-catalog\.bloop\course-catalog.json'
+[0m[32m[D][0m Loading project from 'c:\Users\Jenny\course-catalog\.bloop\course-catalog-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.12.
+[0m[32m[D][0m   => C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\jansi.jar
+[0m[32m[D][0m   => C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\jline.jar
+[0m[32m[D][0m   => C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-compiler.jar
+[0m[32m[D][0m   => C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-library.jar
+[0m[32m[D][0m   => C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-reflect.jar
+[0m[32m[D][0m   => C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-xml_2.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'course-catalog-test', 'course-catalog'
+[0m[32m[D][0m Missing analysis file for project 'course-catalog-test'
+[0m[32m[D][0m Loading previous analysis for 'course-catalog' from 'C:\Users\Jenny\course-catalog\target\streams\compile\bloopAnalysisOut\_global\streams\inc_compile_2.12.zip'.
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:12868...
+The server is listening for incoming connections at tcp://127.0.0.1:12868...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.18 18:53:56 INFO  time: code lens generation in 3.6s[0m
+[0m2021.04.18 18:53:57 INFO  time: code lens generation in 5.14s[0m
+[0m2021.04.18 18:53:57 INFO  time: code lens generation in 5.83s[0m
+[0m2021.04.18 18:53:57 INFO  time: code lens generation in 7.29s[0m
+[0m2021.04.18 18:53:58 INFO  time: code lens generation in 9.33s[0m
+[0m2021.04.18 18:53:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.18 18:53:59 INFO  Attempting to connect to the build server...[0m
+[0m2021.04.18 18:53:59 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 20336'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 23592'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:20336...
+The server is listening for incoming connections at tcp://127.0.0.1:20336...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:23592...
+The server is listening for incoming connections at tcp://127.0.0.1:23592...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.04.18 18:54:00 INFO  time: code lens generation in 10s[0m
+[0m2021.04.18 18:54:00 INFO  time: code lens generation in 16s[0m
+[0m2021.04.18 18:54:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.18 18:54:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.04.18 18:54:01 INFO  time: Connected to build server in 33s[0m
+[0m2021.04.18 18:54:01 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.04.18 18:54:01 INFO  time: Imported build in 0.42s[0m
+[0m2021.04.18 18:54:05 INFO  time: indexed workspace in 3.73s[0m
+[0m2021.04.18 18:54:39 INFO  compiling course-catalog (6 scala sources)[0m
+[0m2021.04.18 18:55:01 WARN  there were three deprecation warnings (since 2.2.60)[0m
+[0m2021.04.18 18:55:01 WARN  there was one deprecation warning (since 8.0.60-R10)[0m
+[0m2021.04.18 18:55:01 WARN  there were four deprecation warnings in total; re-run with -deprecation for details[0m
+[0m2021.04.18 18:55:01 INFO  time: compiled course-catalog in 22s[0m
+[0m2021.04.18 19:10:59 INFO  shutting down Metals[0m
+[0m2021.04.18 19:10:59 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.18 19:10:59 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.04.18 19:10:59 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.05.11 12:57:06 INFO  Started: Metals version 0.10.2 in workspace 'C:\Users\Jenny\course-catalog' for client vscode 1.56.0.[0m
+[0m2021.05.11 12:57:11 INFO  time: initialize in 5.53s[0m
+[0m2021.05.11 12:57:13 INFO  Attempting to connect to the build server...[0m
+[0m2021.05.11 12:57:13 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\CatalogApp.scala[0m
+[0m2021.05.11 12:57:13 ERROR failed to index classpath for workspace/symbol
+java.lang.IllegalArgumentException: requirement failed
+	at scala.Predef$.require(Predef.scala:268)
+	at scala.meta.internal.metals.CompressedPackageIndex.<init>(CompressedPackageIndex.scala:23)
+	at scala.meta.internal.metals.CompressedPackageIndex$.flushBucket$1(CompressedPackageIndex.scala:104)
+	at scala.meta.internal.metals.CompressedPackageIndex$.fromPackages(CompressedPackageIndex.scala:144)
+	at scala.meta.internal.metals.ClasspathSearch$.fromPackages(ClasspathSearch.scala:89)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspathUnsafe(WorkspaceSymbolProvider.scala:105)
+	at scala.meta.internal.metals.WorkspaceSymbolProvider.indexClasspath(WorkspaceSymbolProvider.scala:65)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$didChangeConfiguration$1(MetalsLanguageServer.scala:1132)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+[0m
+[0m2021.05.11 12:57:14 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 24935'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:24935...
+The server is listening for incoming connections at tcp://127.0.0.1:24935...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.11 12:57:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.05.11 12:57:22 INFO  Attempting to connect to the build server...[0m
+[0m2021.05.11 12:57:22 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 36380'...
+Waiting for the bsp connection to come up...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 22559'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:36380...
+The server is listening for incoming connections at tcp://127.0.0.1:36380...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:22559...
+The server is listening for incoming connections at tcp://127.0.0.1:22559...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.05.11 12:57:26 INFO  no build target: using presentation compiler with only scala-library: 2.12.13[0m
+May 11, 2021 12:57:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+May 11, 2021 12:57:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+[0m2021.05.11 12:57:27 WARN  no build target for: C:\Users\Jenny\course-catalog\src\main\scala\cc\CourseCatalog.scala[0m
+[0m2021.05.11 12:57:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.05.11 12:57:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Jenny\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.05.11 12:57:29 INFO  time: Connected to build server in 15s[0m
+[0m2021.05.11 12:57:29 INFO  Connected to Build server: Bloop v1.4.8[0m
+[0m2021.05.11 12:57:29 INFO  time: Imported build in 0.58s[0m
+[0m2021.05.11 12:57:53 INFO  time: indexed workspace in 23s[0m
+[0m2021.05.11 12:57:59 INFO  compiling course-catalog (6 scala sources)[0m
+[0m2021.05.11 12:58:07 INFO  Deduplicating compilation of course-catalog from bsp client 'Metals 0.10.2' (since 43.669s)[0m
+[0m2021.05.11 12:58:07 INFO  compiling course-catalog (6 scala sources)[0m
+[0m2021.05.11 12:58:08 ERROR text document: file:///C:/Users/Jenny/course-catalog/src/main/scala/cc/CourseCatalog.scala
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.compile(InteractiveSemanticdbs.scala:183)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:80)
+	at java.util.HashMap.compute(HashMap.java:1228)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2692)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:76)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1474)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1472)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:834)
+[0m
+[0m2021.05.11 12:58:08 INFO  time: code lens generation in 41s[0m
+May 11, 2021 12:58:13 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+May 11, 2021 12:58:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 39
+[0m2021.05.11 12:58:18 INFO  time: code lens generation in 51s[0m
+[0m2021.05.11 12:58:25 INFO  time: code lens generation in 1m10s[0m
+[0m2021.05.11 12:58:30 WARN  there were three deprecation warnings (since 2.2.60)[0m
+[0m2021.05.11 12:58:30 WARN  there was one deprecation warning (since 8.0.60-R10)[0m
+[0m2021.05.11 12:58:30 WARN  there were four deprecation warnings in total; re-run with -deprecation for details[0m
+[0m2021.05.11 12:58:30 WARN  there were three deprecation warnings (since 2.2.60)[0m
+[0m2021.05.11 12:58:30 WARN  there was one deprecation warning (since 8.0.60-R10)[0m
+[0m2021.05.11 12:58:30 WARN  there were four deprecation warnings in total; re-run with -deprecation for details[0m
+[0m2021.05.11 12:58:30 INFO  time: compiled course-catalog in 24s[0m
+May 11, 2021 12:58:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 66
+May 11, 2021 12:58:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 71
+May 11, 2021 12:59:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 115
+May 11, 2021 1:02:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 394
+May 11, 2021 1:02:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 395
+May 11, 2021 1:02:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 396
+May 11, 2021 1:02:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 397
+May 11, 2021 1:02:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 399
+May 11, 2021 1:02:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 398
+[0m2021.05.11 13:02:20 INFO  compiling course-catalog (1 scala source)[0m
+[0m2021.05.11 13:02:28 INFO  time: compiled course-catalog in 8.41s[0m
+[0m2021.05.11 13:09:15 INFO  compiling course-catalog (1 scala source)[0m
+[0m2021.05.11 13:09:19 INFO  time: compiled course-catalog in 4.27s[0m
+[0m2021.05.11 13:10:06 INFO  compiling course-catalog (1 scala source)[0m
+[0m2021.05.11 13:10:08 INFO  time: compiled course-catalog in 1.12s[0m
+[0m2021.05.11 13:10:18 INFO  compiling course-catalog (1 scala source)[0m
+[0m2021.05.11 13:10:22 INFO  time: compiled course-catalog in 4.09s[0m
+[0m2021.05.11 13:16:33 INFO  compiling course-catalog (1 scala source)[0m
+May 11, 2021 1:16:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 635
+May 11, 2021 1:16:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 636
+[0m2021.05.11 13:16:39 WARN  there were three deprecation warnings (since 2.2.60)[0m
+[0m2021.05.11 13:16:39 WARN  there was one deprecation warning (since 8.0.60-R10)[0m
+[0m2021.05.11 13:16:39 WARN  there were four deprecation warnings in total; re-run with -deprecation for details[0m
+[0m2021.05.11 13:16:39 INFO  time: compiled course-catalog in 6.52s[0m

@@ -167,6 +167,12 @@ Examines the foundations of human language including phonology, morphology, synt
 none
  
 
+CLAS 1305
+Classical Mythology
+An introductory survey of the major myths of the classical world, drawing on evidence from ancient literature and art. Course may also explore modern theoretical approaches (anthropological, historical, political, linguistic, feminist, psychological, etc.) to the study of myth in general, and how these modern theories have been applied to classical myth.
+none
+ 
+
 HCOM 1310
 Applied Linguistics
 Examines applications of linguistics in psycholinguistics (language acquisition and language processing), sociolinguistics (language development and change in groups and organizations), the interaction of language and culture, and analytical procedures (discourse and text analysis).
@@ -221,11 +227,18 @@ A basic self-defense course for women that provides them with the information, t
 none
  
 
+PHED 1153
+Ballroom Dance I
+Basic steps and variations for the following dances: fox trot, waltz, swing, polka, rhumba, cha cha, samba tango, mambo and merengue. Rhythmical analysis, music recognition and techniques of leading and following.
+none
+ 
+
 PHED 1146
 Roller Skating I
 This course is designed to teach students the basic skills they need to participate in Roller Skating as part of a healthy active lifestyle.
 none
  
+
 CSCI 2320
 Principles of Data Abstraction
 Abstract data types and their implementation in an object-oriented environment. Axiomatic systems describing the classical computer science data structures: stacks, queues, lists, trees, graphs, and the like. Analysis of the computational complexity of alternative implementation strategies in the context of the typical algorithmic applications.
