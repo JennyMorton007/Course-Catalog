@@ -1,36 +1,12 @@
-
 CSCI 1120
-Low-Level Computing
-Seminar on concepts of computing that are close to the machine level. The course teaches skills such as command line processing and programming in a language that exposes more of the underlying machine. Internal data representations will also be explored.
-CSCI 1320
- 
-
+D
 CSCI 1321
-Principles of Computer Science II
-Focus on object-oriented programming and the development of software to solve larger problems that can benefit from this approach. Abstraction, polymorphism, multithreading, and networking. Program correctness and program verification, algorithm analysis, and computational complexity. User defined structures, data types. Abstract data types including stacks, queues, linked lists, trees, and heaps. Computer programming solutions to several laboratory exercises.
-CSCI 1320
- 
-
+A
 CSCI 1323
-Discrete Structures
-Elements of discrete mathematics of particular importance in computer science: propositional and predicate logic; proof techniques, including mathematical induction; recursive functions, definitions, and algorithms; proofs of program correctness; algebra of sets; relations and functions; and elements of the theory of directed and undirected graphs. Application of these structures to various areas of computer science.
-CSCI 1320
- 
-
+A-
 SPAN 2302
-Intermediate Spanish II
-N/A
-SPAN 2301
- 
-
+B
 ECON 1311
-Principles of Microeconomics
-An introduction to the economic organization of society, with emphasis on how markets, prices, profits and losses guide and direct economic activity. Throughout the course, economic analysis is applied to a wide range of contemporary problems and issues.
-none
- 
-
+A-
 MATH 2321
-Calculus III
-The study of partial differentiation, multiple integrals, and vector calculus.
-MATH 1312
- 
+B+

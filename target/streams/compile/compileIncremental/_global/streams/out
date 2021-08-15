@@ -1,6 +1,38 @@
-[debug] [zinc] IncrementalCompile -----------
-[debug] IncrementalCompile.incrementalCompile
-[debug] previous = Stamps for: 39 products, 6 sources, 4 libraries
-[debug] current source = Set(${BASE}/src/main/scala/cc/Course.scala, ${BASE}/src/main/scala/cc/Complete.scala, ${BASE}/src/main/scala/cc/CourseCatalog.scala, ${BASE}/src/main/scala/cc/CatalogApp.scala, ${BASE}/src/main/scala/cc/Requirement.scala, ${BASE}/src/main/scala/cc/Group.scala)
-[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
-[debug] No changes
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 40 products, 6 sources, 4 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/cc/Course.scala, ${BASE}/src/main/scala/cc/Complete.scala, ${BASE}/src/main/scala/cc/CourseCatalog.scala, ${BASE}/src/main/scala/cc/CatalogApp.scala, ${BASE}/src/main/scala/cc/Requirement.scala, ${BASE}/src/main/scala/cc/Group.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/cc/CatalogApp.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/cc/CatalogApp.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(cc.CatalogApp)[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(cc.CatalogApp)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/cc/CatalogApp.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: cc.CatalogApp[0m
+[0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\Jenny\course-catalog\target\scala-2.12\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.4.4:compile for Scala 2.12.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 65458ff5 for Scala compiler version 2.12.12[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-library.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\Jenny\course-catalog\target\scala-2.12\classes;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalafx\scalafx_2.12\8.0.144-R12\scalafx_2.12-8.0.144-R12.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scalactic\scalactic_2.12\3.0.5\scalactic_2.12-3.0.5.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-base\11\javafx-base-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-controls\11\javafx-controls-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-fxml\11\javafx-fxml-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-graphics\11\javafx-graphics-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-media\11\javafx-media-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-swing\11\javafx-swing-11-win.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-web\11\javafx-web-11-win.jar;C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-reflect.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-graphics\11\javafx-graphics-11.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-controls\11\javafx-controls-11.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-base\11\javafx-base-11.jar;C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\openjfx\javafx-media\11\javafx-media-11.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.6652523 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m

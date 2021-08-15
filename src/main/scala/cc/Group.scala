@@ -23,18 +23,18 @@ class Group(val name:String){
     }
     def getHours():Int = {
         var sum = 0;
-        classes.foreach((x)=>{sum+=x.code.toString().substring(6,7).toInt})
+        classes.foreach((x)=>{sum+=x.getHour()})
         sum
     }
     def getLong():String = {
         var ret = name+"\n";
-        classes.foreach((x)=>{ret+=x.getLong()})
-        ret+" \n"
+        classes.foreach((x)=>{ret+=x.getLong()+"\n"})
+        ret
     }
     def getShort():String = {
         var ret = name+"\n";
         classes.foreach((x)=>{ret+=x.getShort()+"\n"})
-        ret+" \n"
+        ret
     }
     def findCourse(cod:String):Course = {
         classes.foreach((x)=>{if(cod==x.code){return x}})

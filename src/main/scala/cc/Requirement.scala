@@ -6,7 +6,7 @@ class Requirement(var name: String) extends Complete {
   var and = Set[Course]()
   var or = Set[Set[Course]]()
 
-  override def toString(): String = {
+  /*override def toString(): String = {
     var temp = and.count(_.done)
     temp+= or.count(isDone(_))
     var ret = name + {
@@ -48,5 +48,5 @@ class Requirement(var name: String) extends Complete {
       })
     }
     if (ret) { done = true }
-  }
+  }*/
 }

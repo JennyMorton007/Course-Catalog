@@ -9,8 +9,95 @@ import scala.collection.mutable.Buffer
 import scala.collection.mutable.Set
 
 
-class CourseCatalog {
-  var line = ""
+
+class CourseCatalog(allTxt:String,creditTxt:List[String],currentTxt:String,nextTxt:String) {
+
+
+  var courses = new Group("All Courses")
+  var c = Course()
+  for(x <- Source.fromFile(allTxt).getLines()){
+    val line = x
+    if(line==""){courses.add(c.clone);c=Course()}
+    else if(c.code=="") c.code=line
+    else if(c.name=="") c.name=line
+    else if(c.des=="") c.des=line
+    else c.prereq=line
+  }
+
+  courses.sort()
+  courses.classes.foreach(x => println(x.code+"\t"+x.name))
+
+  var ap = new Group("AP Credit")
+  var fl20 = new Group("Fall 2020")
+  var sp21 = new Group("Spring 2021")
+  for(x <- Source.fromFile(creditTxt(0)).getLines()){
+    val line = x
+    if(line.length()>0 && line.length()<4) ap.classes.last.grade=line
+    else ap.add(courses.findCourse(line))
+  }
+  for(x <- Source.fromFile(creditTxt(1)).getLines()){
+    val line = x
+    if(line.length()>0 && line.length()<4) fl20.classes.last.grade=line
+    else fl20.add(courses.findCourse(line))
+  }
+  for(x <- Source.fromFile(creditTxt(2)).getLines()){
+    val line = x
+    if(line.length()>0 && line.length()<4) sp21.classes.last.grade=line
+    else sp21.add(courses.findCourse(line))
+  }
+
+  ap.classes.foreach(x => x.taken+=1)
+  ap.sort()
+  fl20.classes.foreach(x => x.taken+=1)
+  fl20.sort()
+  sp21.classes.foreach(x => x.taken+=1)
+  sp21.sort()
+
+  //ap.classes.foreach(x => println(x.code+"\t"+x.name))
+  //fl20.classes.foreach(x => println(x.code+"\t"+x.name+"\t"+x.grade))
+  //sp21.classes.foreach(x => println(x.code+"\t"+x.name+"\t"+x.grade))
+  
+  var fl21 = new Group("Spring 2021")
+  var sp22 = new Group("Spring 2021")
+  for(x <- Source.fromFile(currentTxt).getLines()){
+    val line = x
+    if(line.length()>0 && line.length()<4) fl21.classes.last.grade=line
+    else fl21.add(courses.findCourse(line))
+  }
+  for(x <- Source.fromFile(nextTxt).getLines()){
+    val line = x
+    if(line.length()>0 && line.length()<4) sp22.classes.last.grade=line
+    else sp22.add(courses.findCourse(line))
+  }
+
+  fl21.sort()
+  //fl21.classes.foreach(x => println(x.code+"\t"+x.name))
+  sp22.sort()
+  //sp22.classes.foreach(x => println(x.code+"\t"+x.name))
+
+  /*println(courses.getLong())
+  println(ap.getLong())
+  println(fl20.getLong())
+  println(sp21.getLong())
+  println(fl21.getLong())
+  println(sp22.getLong())
+*/
+
+  def getGrades():String = {
+    var ret = ""
+    courses.classes.foreach(x => if(x.grade!="")ret+=x.grade+" \t"+x.getShort()+"\n")
+    ret
+  }  
+
+
+
+
+
+
+
+
+
+  /*var line = ""
   var course: Course = Course()
   var grad = Buffer[Requirement]()
   var reqs = Map[String,Requirement]()
@@ -90,7 +177,7 @@ class CourseCatalog {
   }
   def getGrades(): String = {
     var ret = ""
-    all.classes.foreach((x) => if(x.grade!=""){ret += (x.code + "\t" + x.grade + "\n")})
+    all.classes.foreach((x) => if(x.grade!=""){ret += (x.code + " \t" + x.grade + "\n")})
     ret + "\n"
   }
   def getGPA(): String = {
@@ -156,5 +243,5 @@ class CourseCatalog {
       }
     }
     ret
-  }
+  }*/
 }

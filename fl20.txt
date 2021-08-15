@@ -1,35 +1,10 @@
-
 CSCI 1320
-Principles of Computer Science I
-This course goes over the basics of computer science. 
-none
 A
- 
-
 FYE- 1600
-First-Year Experience
-The First-Year Experience provides substantial instruction in written and oral communication skills while engaging a topic of widespread or enduring significance. For each topic, the First-Year Experience consists of multiple sections linked by a common syllabus and a weekly common learning experience for all students and faculty. Each section is taught by two instructors and is the equivalent of two three-hour courses.
-none
 B+
- 
-
 CHEM 1318
-General Chemistry
-Fundamental concepts in chemical science, taught from perspectives of chemistry in the modern world, with emphasis placed on quantitative problem solving. Course content will include stoichometry and mass relationships, properties of solutions, atomic structure, molecular structure and bonding, intermolecular forces, chemical equilibrium, thermodynamics and kinetics. Lecture, 3 hours per week. Credit for the Common Curriculum will not be granted for both CHEM 1300 and CHEM 1318. Prerequisite: Passing the Chemistry Placement exam or CHEM 1300. Co requisite: CHEM 1118.
-none
 B
- 
-
 CHEM 1118
-General Chemistry Laboratory
-Emphasis is placed on the development of laboratory skills that are fundamental to experimental chemistry. Laboratory operations include the use of modern potentiometric and spectrophotometric methods of analysis as well as traditional gravimetric and volumetric procedures. Corequisite: CHEM 1318.
-none
 B
- 
-
 SPAN 2301
-Intermediate Spanish I
-N/A
-none
 A
- 
