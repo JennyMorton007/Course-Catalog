@@ -1,4 +1,4 @@
-[0m[[0m[0mdebug[0m] [0m[0m[course-catalog-build-build] Classpath dependencies List()[0m
-[0m[[0m[0mdebug[0m] [0m[0m[course-catalog-build-build] Dependencies from configurations List()[0m
-[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'course-catalog-build-build' to 'C:\Users\Jenny\course-catalog\project\project\.bloop\course-catalog-build-build.json'[0m
-[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop\course-catalog-build-build.json[0m
+[debug] [course-catalog-build-build] Classpath dependencies List()
+[debug] [course-catalog-build-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'course-catalog-build-build' to 'C:\Users\jenna\Course-Catalog\project\project\.bloop\course-catalog-build-build.json'
+[success] Generated .bloop\course-catalog-build-build.json

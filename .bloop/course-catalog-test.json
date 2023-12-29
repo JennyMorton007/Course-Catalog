@@ -2,47 +2,47 @@
     "version": "1.4.0",
     "project": {
         "name": "course-catalog-test",
-        "directory": "C:\\Users\\Jenny\\course-catalog",
-        "workspaceDir": "C:\\Users\\Jenny\\course-catalog",
+        "directory": "C:\\Users\\jenna\\Course-Catalog",
+        "workspaceDir": "C:\\Users\\jenna\\Course-Catalog",
         "sources": [
-            "C:\\Users\\Jenny\\course-catalog\\src\\test\\scala",
-            "C:\\Users\\Jenny\\course-catalog\\src\\test\\scala-2.12",
-            "C:\\Users\\Jenny\\course-catalog\\src\\test\\scala-2",
-            "C:\\Users\\Jenny\\course-catalog\\src\\test\\java",
-            "C:\\Users\\Jenny\\course-catalog\\target\\scala-2.12\\src_managed\\test"
+            "C:\\Users\\jenna\\Course-Catalog\\src\\test\\scala",
+            "C:\\Users\\jenna\\Course-Catalog\\src\\test\\scala-2.12",
+            "C:\\Users\\jenna\\Course-Catalog\\src\\test\\scala-2",
+            "C:\\Users\\jenna\\Course-Catalog\\src\\test\\java",
+            "C:\\Users\\jenna\\Course-Catalog\\target\\scala-2.12\\src_managed\\test"
         ],
         "dependencies": [
             "course-catalog"
         ],
         "classpath": [
-            "C:\\Users\\Jenny\\course-catalog\\.bloop\\course-catalog\\scala-2.12\\classes",
-            "C:\\Users\\Jenny\\.sbt\\boot\\scala-2.12.12\\lib\\scala-library.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalafx\\scalafx_2.12\\8.0.144-R12\\scalafx_2.12-8.0.144-R12.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\novocode\\junit-interface\\0.11\\junit-interface-0.11.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.0.5\\scalactic_2.12-3.0.5.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.0.5\\scalatest_2.12-3.0.5.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\11\\javafx-base-11-win.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\11\\javafx-controls-11-win.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-fxml\\11\\javafx-fxml-11-win.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\11\\javafx-graphics-11-win.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\11\\javafx-media-11-win.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-swing\\11\\javafx-swing-11-win.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-web\\11\\javafx-web-11-win.jar",
-            "C:\\Users\\Jenny\\.sbt\\boot\\scala-2.12.12\\lib\\scala-reflect.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\junit\\junit\\4.11\\junit-4.11.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\11\\javafx-graphics-11.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\11\\javafx-controls-11.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\11\\javafx-base-11.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\11\\javafx-media-11.jar",
-            "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar"
+            "C:\\Users\\jenna\\Course-Catalog\\.bloop\\course-catalog\\scala-2.12\\classes",
+            "C:\\Users\\jenna\\.sbt\\boot\\scala-2.12.12\\lib\\scala-library.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalafx\\scalafx_2.12\\8.0.144-R12\\scalafx_2.12-8.0.144-R12.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\novocode\\junit-interface\\0.11\\junit-interface-0.11.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.0.5\\scalactic_2.12-3.0.5.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.0.5\\scalatest_2.12-3.0.5.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\11\\javafx-base-11-win.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\11\\javafx-controls-11-win.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-fxml\\11\\javafx-fxml-11-win.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\11\\javafx-graphics-11-win.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\11\\javafx-media-11-win.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-swing\\11\\javafx-swing-11-win.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-web\\11\\javafx-web-11-win.jar",
+            "C:\\Users\\jenna\\.sbt\\boot\\scala-2.12.12\\lib\\scala-reflect.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\junit\\junit\\4.11\\junit-4.11.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\11\\javafx-graphics-11.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\11\\javafx-controls-11.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\11\\javafx-base-11.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\11\\javafx-media-11.jar",
+            "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar"
         ],
-        "out": "C:\\Users\\Jenny\\course-catalog\\.bloop\\course-catalog",
-        "classesDir": "C:\\Users\\Jenny\\course-catalog\\.bloop\\course-catalog\\scala-2.12\\test-classes",
+        "out": "C:\\Users\\jenna\\Course-Catalog\\.bloop\\course-catalog",
+        "classesDir": "C:\\Users\\jenna\\Course-Catalog\\.bloop\\course-catalog\\scala-2.12\\test-classes",
         "resources": [
-            "C:\\Users\\Jenny\\course-catalog\\src\\test\\resources",
-            "C:\\Users\\Jenny\\course-catalog\\target\\scala-2.12\\resource_managed\\test"
+            "C:\\Users\\jenna\\Course-Catalog\\src\\test\\resources",
+            "C:\\Users\\jenna\\Course-Catalog\\target\\scala-2.12\\resource_managed\\test"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -52,14 +52,11 @@
                 
             ],
             "jars": [
-                "C:\\Users\\Jenny\\.sbt\\boot\\scala-2.12.12\\lib\\jansi.jar",
-                "C:\\Users\\Jenny\\.sbt\\boot\\scala-2.12.12\\lib\\jline.jar",
-                "C:\\Users\\Jenny\\.sbt\\boot\\scala-2.12.12\\lib\\scala-compiler.jar",
-                "C:\\Users\\Jenny\\.sbt\\boot\\scala-2.12.12\\lib\\scala-library.jar",
-                "C:\\Users\\Jenny\\.sbt\\boot\\scala-2.12.12\\lib\\scala-reflect.jar",
-                "C:\\Users\\Jenny\\.sbt\\boot\\scala-2.12.12\\lib\\scala-xml_2.12.jar"
+                "C:\\Users\\jenna\\.sbt\\boot\\scala-2.12.12\\lib\\scala-compiler.jar",
+                "C:\\Users\\jenna\\.sbt\\boot\\scala-2.12.12\\lib\\scala-library.jar",
+                "C:\\Users\\jenna\\.sbt\\boot\\scala-2.12.12\\lib\\scala-reflect.jar",
+                "C:\\Users\\jenna\\.sbt\\boot\\scala-2.12.12\\lib\\scala-xml_2.12-1.0.6.jar"
             ],
-            "analysis": "C:\\Users\\Jenny\\course-catalog\\target\\streams\\test\\bloopAnalysisOut\\_global\\streams\\inc_compile_2.12.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -116,9 +113,9 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "C:\\Program Files\\Java\\jdk-11.0.10",
+                "home": "C:\\Users\\jenna\\.jabba\\jdk\\adopt@1.11.0-11",
                 "options": [
-                    "-Duser.dir=C:\\Users\\Jenny\\course-catalog"
+                    "-Duser.dir=C:\\Users\\jenna\\Course-Catalog"
                 ]
             },
             "mainClass": [
@@ -135,12 +132,12 @@
                     "artifacts": [
                         {
                             "name": "scala-library",
-                            "path": "C:\\Users\\Jenny\\.sbt\\boot\\scala-2.12.12\\lib\\scala-library.jar"
+                            "path": "C:\\Users\\jenna\\.sbt\\boot\\scala-2.12.12\\lib\\scala-library.jar"
                         },
                         {
                             "name": "scala-library",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.12\\scala-library-2.12.12-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.12\\scala-library-2.12.12-sources.jar"
                         }
                     ]
                 },
@@ -152,12 +149,12 @@
                     "artifacts": [
                         {
                             "name": "scalafx_2.12",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalafx\\scalafx_2.12\\8.0.144-R12\\scalafx_2.12-8.0.144-R12.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalafx\\scalafx_2.12\\8.0.144-R12\\scalafx_2.12-8.0.144-R12.jar"
                         },
                         {
                             "name": "scalafx_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalafx\\scalafx_2.12\\8.0.144-R12\\scalafx_2.12-8.0.144-R12-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalafx\\scalafx_2.12\\8.0.144-R12\\scalafx_2.12-8.0.144-R12-sources.jar"
                         }
                     ]
                 },
@@ -169,12 +166,12 @@
                     "artifacts": [
                         {
                             "name": "scalactic_2.12",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.0.5\\scalactic_2.12-3.0.5.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.0.5\\scalactic_2.12-3.0.5.jar"
                         },
                         {
                             "name": "scalactic_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.0.5\\scalactic_2.12-3.0.5-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.0.5\\scalactic_2.12-3.0.5-sources.jar"
                         }
                     ]
                 },
@@ -186,12 +183,12 @@
                     "artifacts": [
                         {
                             "name": "scala-reflect",
-                            "path": "C:\\Users\\Jenny\\.sbt\\boot\\scala-2.12.12\\lib\\scala-reflect.jar"
+                            "path": "C:\\Users\\jenna\\.sbt\\boot\\scala-2.12.12\\lib\\scala-reflect.jar"
                         },
                         {
                             "name": "scala-reflect",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.12\\scala-reflect-2.12.12-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.12\\scala-reflect-2.12.12-sources.jar"
                         }
                     ]
                 },
@@ -203,17 +200,17 @@
                     "artifacts": [
                         {
                             "name": "javafx-graphics",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\11\\javafx-graphics-11.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\11\\javafx-graphics-11.jar"
                         },
                         {
                             "name": "javafx-graphics",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\11\\javafx-graphics-11-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\11\\javafx-graphics-11-sources.jar"
                         },
                         {
                             "name": "javafx-graphics",
                             "classifier": "win",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\11\\javafx-graphics-11-win.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-graphics\\11\\javafx-graphics-11-win.jar"
                         }
                     ]
                 },
@@ -225,17 +222,17 @@
                     "artifacts": [
                         {
                             "name": "javafx-controls",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\11\\javafx-controls-11.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\11\\javafx-controls-11.jar"
                         },
                         {
                             "name": "javafx-controls",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\11\\javafx-controls-11-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\11\\javafx-controls-11-sources.jar"
                         },
                         {
                             "name": "javafx-controls",
                             "classifier": "win",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\11\\javafx-controls-11-win.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-controls\\11\\javafx-controls-11-win.jar"
                         }
                     ]
                 },
@@ -247,17 +244,17 @@
                     "artifacts": [
                         {
                             "name": "javafx-base",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\11\\javafx-base-11.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\11\\javafx-base-11.jar"
                         },
                         {
                             "name": "javafx-base",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\11\\javafx-base-11-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\11\\javafx-base-11-sources.jar"
                         },
                         {
                             "name": "javafx-base",
                             "classifier": "win",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\11\\javafx-base-11-win.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-base\\11\\javafx-base-11-win.jar"
                         }
                     ]
                 },
@@ -269,17 +266,17 @@
                     "artifacts": [
                         {
                             "name": "javafx-media",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\11\\javafx-media-11.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\11\\javafx-media-11.jar"
                         },
                         {
                             "name": "javafx-media",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\11\\javafx-media-11-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\11\\javafx-media-11-sources.jar"
                         },
                         {
                             "name": "javafx-media",
                             "classifier": "win",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\11\\javafx-media-11-win.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\openjfx\\javafx-media\\11\\javafx-media-11-win.jar"
                         }
                     ]
                 },
@@ -291,12 +288,12 @@
                     "artifacts": [
                         {
                             "name": "scala-library",
-                            "path": "C:\\Users\\Jenny\\.sbt\\boot\\scala-2.12.12\\lib\\scala-library.jar"
+                            "path": "C:\\Users\\jenna\\.sbt\\boot\\scala-2.12.12\\lib\\scala-library.jar"
                         },
                         {
                             "name": "scala-library",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.12\\scala-library-2.12.12-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.12\\scala-library-2.12.12-sources.jar"
                         }
                     ]
                 },
@@ -308,12 +305,12 @@
                     "artifacts": [
                         {
                             "name": "scala-xml_2.12",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6.jar"
                         },
                         {
                             "name": "scala-xml_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6-sources.jar"
                         }
                     ]
                 },
@@ -325,12 +322,12 @@
                     "artifacts": [
                         {
                             "name": "junit-interface",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\novocode\\junit-interface\\0.11\\junit-interface-0.11.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\novocode\\junit-interface\\0.11\\junit-interface-0.11.jar"
                         },
                         {
                             "name": "junit-interface",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\novocode\\junit-interface\\0.11\\junit-interface-0.11-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\novocode\\junit-interface\\0.11\\junit-interface-0.11-sources.jar"
                         }
                     ]
                 },
@@ -342,12 +339,12 @@
                     "artifacts": [
                         {
                             "name": "scalatest_2.12",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.0.5\\scalatest_2.12-3.0.5.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.0.5\\scalatest_2.12-3.0.5.jar"
                         },
                         {
                             "name": "scalatest_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.0.5\\scalatest_2.12-3.0.5-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.0.5\\scalatest_2.12-3.0.5-sources.jar"
                         }
                     ]
                 },
@@ -359,12 +356,12 @@
                     "artifacts": [
                         {
                             "name": "junit",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\junit\\junit\\4.11\\junit-4.11.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\junit\\junit\\4.11\\junit-4.11.jar"
                         },
                         {
                             "name": "junit",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\junit\\junit\\4.11\\junit-4.11-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\junit\\junit\\4.11\\junit-4.11-sources.jar"
                         }
                     ]
                 },
@@ -376,12 +373,12 @@
                     "artifacts": [
                         {
                             "name": "test-interface",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar"
                         },
                         {
                             "name": "test-interface",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0-sources.jar"
                         }
                     ]
                 },
@@ -393,12 +390,12 @@
                     "artifacts": [
                         {
                             "name": "hamcrest-core",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar"
                         },
                         {
                             "name": "hamcrest-core",
                             "classifier": "sources",
-                            "path": "C:\\Users\\Jenny\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3-sources.jar"
+                            "path": "C:\\Users\\jenna\\Course-Catalog\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3-sources.jar"
                         }
                     ]
                 }

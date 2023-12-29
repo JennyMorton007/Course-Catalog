@@ -21748,3 +21748,89 @@ WARNING: Unmatched cancel notification for request id 465
 [0m2021.08.14 23:53:05 INFO  Current Classes[0m
 [0m2021.08.14 23:53:07 INFO  Next Semester[0m
 [0m2021.08.14 23:53:11 INFO  Canceling debug proxy for [cc.CatalogApp][0m
+2023.11.09 20:54:48 INFO  Started: Metals version 1.1.0 in folders 'C:\Users\jenna\Course-Catalog' for client Visual Studio Code 1.84.2.
+2023.11.09 20:54:48 INFO  Deleting old database format C:\Users\jenna\Course-Catalog\.metals\metals.h2.db
+2023.11.09 20:54:53 INFO  Attempting to connect to the build server...
+2023.11.09 20:54:53 INFO  Bloop uses C:\Users\jenna\.jabba\jdk\adopt@1.11.0-11 defined at C:\Users\jenna\.bloop\bloop.json
+2023.11.09 20:54:53 ERROR Starting the bsp launcher for bloop...
+2023.11.09 20:54:53 ERROR Opening a bsp server connection with 'bsp --protocol tcp --port 23912'...
+2023.11.09 20:54:53 ERROR Waiting for the bsp connection to come up...
+2023.11.09 20:54:53 ERROR error: The command bsp --protocol tcp --port 23912 returned with an error
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\jansi.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\jansi.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\jline.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-compiler.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\jline.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-library.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-compiler.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-reflect.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-library.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-xml_2.12.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-reflect.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[33m[W][0m Scala instance jar C:\Users\Jenny\.sbt\boot\scala-2.12.12\lib\scala-xml_2.12.jar doesn't exist!
+2023.11.09 20:54:53 ERROR > [0m[31m[E][0m Failed to load project from c:\Users\jenna\Course-Catalog\.bloop\course-catalog-test.json
+2023.11.09 20:54:53 ERROR error: The launcher failed to establish a bsp connection, aborting...
+2023.11.09 20:54:53 ERROR Failed to connect with build server, no functionality will work.
+java.lang.RuntimeException: The server did not start, got FailedToOpenBspConnection
+	at bloop.launcher.LauncherMain.failPromise$1(Launcher.scala:92)
+	at bloop.launcher.LauncherMain.runLauncher(Launcher.scala:119)
+	at scala.meta.internal.metals.BloopServers$$anon$2.run(BloopServers.scala:500)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+
+2023.11.09 20:54:56 INFO  running 'C:\Users\jenna\.jabba\jdk\adopt@1.11.0-11\bin\java.exe -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\jenna\AppData\Local\Temp\metals4705481103278481864\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'
+2023.11.09 20:54:56 ERROR [info] [launcher] getting org.scala-sbt sbt 1.4.9  (this may take some time)...
+2023.11.09 20:55:02 ERROR [info] [launcher] getting Scala 2.12.12 (for sbt)...
+2023.11.09 20:55:04 INFO  [info] welcome to sbt 1.4.9 (AdoptOpenJDK Java 11.0.11)
+2023.11.09 20:55:05 INFO  [info] loading settings for project course-catalog-build-build-build from metals.sbt ...
+2023.11.09 20:55:05 INFO  [info] loading project definition from C:\Users\jenna\Course-Catalog\project\project\project
+2023.11.09 20:55:09 INFO  [info] loading settings for project course-catalog-build-build from metals.sbt ...
+2023.11.09 20:55:09 INFO  [info] loading project definition from C:\Users\jenna\Course-Catalog\project\project
+2023.11.09 20:55:15 INFO  [success] Generated .bloop\course-catalog-build-build.json
+2023.11.09 20:55:15 INFO  [success] Total time: 6 s, completed Nov 9, 2023, 8:55:15 PM
+2023.11.09 20:55:15 INFO  [info] loading settings for project course-catalog-build from assembly.sbt,metals.sbt,plugins.sbt ...
+2023.11.09 20:55:15 INFO  [info] loading project definition from C:\Users\jenna\Course-Catalog\project
+2023.11.09 20:55:24 INFO  [success] Generated .bloop\course-catalog-build.json
+2023.11.09 20:55:24 INFO  [success] Total time: 8 s, completed Nov 9, 2023, 8:55:24 PM
+2023.11.09 20:55:25 INFO  [info] loading settings for project course-catalog from build.sbt ...
+2023.11.09 20:55:25 INFO  [info] set current project to course-catalog (in build file:/C:/Users/jenna/Course-Catalog/)
+2023.11.09 20:55:30 INFO  [warn] scala-library-2.12.12-sources.jar no longer exists at C:\Users\Jenny\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.12.12\scala-library-2.12.12-sources.jar
+2023.11.09 20:55:30 INFO  [success] Generated .bloop\course-catalog-test.json
+2023.11.09 20:55:30 INFO  [success] Generated .bloop\course-catalog.json
+2023.11.09 20:55:30 INFO  [success] Total time: 6 s, completed Nov 9, 2023, 8:55:31 PM
+2023.11.09 20:55:31 INFO  time: ran 'sbt bloopInstall' in 35s
+2023.11.09 20:55:31 INFO  Attempting to connect to the build server...
+2023.11.09 20:55:31 INFO  Bloop uses C:\Users\jenna\.jabba\jdk\adopt@1.11.0-11 defined at C:\Users\jenna\.bloop\bloop.json
+2023.11.09 20:55:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\jenna\Course-Catalog\.metals\bsp.trace.json or C:\Users\jenna\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.11.09 20:55:35 INFO  Attempting to connect to the build server...
+2023.11.09 20:55:35 INFO  Bloop uses C:\Users\jenna\.jabba\jdk\adopt@1.11.0-11 defined at C:\Users\jenna\.bloop\bloop.json
+2023.11.09 20:55:35 INFO  Attempting to connect to the build server...
+2023.11.09 20:55:35 INFO  Bloop uses C:\Users\jenna\.jabba\jdk\adopt@1.11.0-11 defined at C:\Users\jenna\.bloop\bloop.json
+2023.11.09 20:55:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\jenna\Course-Catalog\project\project\.metals\bsp.trace.json or C:\Users\jenna\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.11.09 20:55:35 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\jenna\Course-Catalog\project\.metals\bsp.trace.json or C:\Users\jenna\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.11.09 20:55:35 INFO  time: Connected to build server in 4.39s
+2023.11.09 20:55:35 INFO  Connected to Build server: Bloop v1.5.11
+2023.11.09 20:55:40 INFO  time: indexed workspace in 4.79s
+2023.11.09 20:59:15 INFO  Shutting down server
+2023.11.09 20:59:15 INFO  shutting down Metals
+2023.11.09 20:59:16 INFO  Shut down connection with build server.
+2023.11.09 20:59:16 INFO  Shut down connection with build server.
+2023.11.09 20:59:16 INFO  Shut down connection with build server.
+2023.11.09 20:59:15 INFO  Exiting server
+2023.12.28 19:19:58 INFO  Started: Metals version 1.2.0 in folders 'C:\Users\jenna\Course-Catalog' for client Visual Studio Code 1.85.1.
+2023.12.28 19:19:59 INFO  Attempting to connect to the build server...
+2023.12.28 19:19:59 INFO  Bloop uses C:\Users\jenna\.jabba\jdk\adopt@1.11.0-11 defined at C:\Users\jenna\.bloop\bloop.json
+2023.12.28 19:19:59 INFO  skipping build import with status 'Installed'
+2023.12.28 19:19:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\jenna\Course-Catalog\.metals\bsp.trace.json or C:\Users\jenna\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.12.28 19:19:59 INFO  Attempting to connect to the build server...
+2023.12.28 19:19:59 INFO  Bloop uses C:\Users\jenna\.jabba\jdk\adopt@1.11.0-11 defined at C:\Users\jenna\.bloop\bloop.json
+2023.12.28 19:19:59 INFO  Attempting to connect to the build server...
+2023.12.28 19:19:59 INFO  Bloop uses C:\Users\jenna\.jabba\jdk\adopt@1.11.0-11 defined at C:\Users\jenna\.bloop\bloop.json
+2023.12.28 19:19:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\jenna\Course-Catalog\project\project\.metals\bsp.trace.json or C:\Users\jenna\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.12.28 19:20:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\jenna\Course-Catalog\project\.metals\bsp.trace.json or C:\Users\jenna\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2023.12.28 19:20:00 INFO  time: Connected to build server in 1.08s
+2023.12.28 19:20:00 INFO  Connected to Build server: Bloop v1.5.13
+2023.12.28 19:20:23 INFO  time: indexed workspace in 22s
